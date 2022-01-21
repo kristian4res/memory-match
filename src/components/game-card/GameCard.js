@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './GameCard.css';
 
 const GameCard = ({ card, handleChoice, flipped, matched, disabled }) => {
@@ -10,17 +11,17 @@ const GameCard = ({ card, handleChoice, flipped, matched, disabled }) => {
     };
 
     return (
-        <div className="game-grid__card">
-            <div className={flipped ? "game-grid__card-flip" : ""}>
+        <div className="game-card">
+            <div className={flipped ? "game-card-flip" : ""}>
                 <img 
                     src={card.src} 
                     alt="Card front" 
-                    className={`game-grid__card--front ${matched ? "game-grid__card-matched": ""}`}
+                    className={`game-card--front ${matched ? "game-card-matched": ""}`}
                 />
                 <img 
                     src="/img/cover.png" 
                     alt="Card back" 
-                    className={`game-grid__card--back ${matched ? "game-grid__card-matched": ""}`}
+                    className={`game-card--back ${matched ? "game-card-matched": ""}`}
                     onClick={handleClick}
                 />
             </div>

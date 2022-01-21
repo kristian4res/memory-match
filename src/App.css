@@ -1,13 +1,5 @@
-.App {
+.app {
+  display: block;
   max-width: 860px;
   margin: 4rem auto;
-}
-
-.game-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2rem;
-  min-height: 58rem;
-
-  margin: 4rem; 
 }

@@ -1,0 +1,13 @@
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 2rem;
+
+    margin: 4rem;
+    justify-items: center;
+}
+
+.game-grid > * {
+    min-height: 12rem;
+    min-width: 12rem;
+}

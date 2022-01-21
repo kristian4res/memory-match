@@ -1,12 +1,12 @@
-.game-grid__card {
+.game-card {
     position: relative;
     cursor: pointer;
-
+ 
     perspective: 150rem;
     -moz-perspective: 150rem;
 }
 
-.game-grid__card img {
+.game-card img {
     display: block;
     width: 100%;
     
@@ -17,28 +17,28 @@
     backface-visibility: hidden;
 }
 
-.game-grid__card img:hover {
+.game-card img:hover {
     border: 2px solid #fff;
 }
 
-.game-grid__card img.game-grid__card-matched {
+.game-card img.game-card-matched {
     border: 2px solid rgb(94, 228, 94);
 }
 
-.game-grid__card .game-grid__card--front {
+.game-card .game-card--front {
     position: absolute;
     transform: scale(1.2) rotateY(180deg);
 }
 
-.game-grid__card .game-grid__card--back {
+.game-card .game-card--back {
     position: absolute;
     transform: rotateY(0deg);
 }
 
-.game-grid__card-flip .game-grid__card--front {
+.game-card-flip .game-card--front {
     transform: rotateY(0deg);
 }
 
-.game-grid__card-flip .game-grid__card--back {
+.game-card-flip .game-card--back {
     transform: rotateY(-180deg);
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
+import GameGrid from './components/game-grid/GameGrid';
 import GameCard from './components/game-card/GameCard';
 import Button from './components/button/Button';
 
@@ -73,11 +74,10 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Memory Match</h1>
+    <div className="app">
+      <h1 className="">Memory Match</h1>
       <Button onClick={shuffleCards}>New Game</Button>
-
-      <div className="game-grid">
+      <GameGrid>
         {
           cards.map(card => (
             <GameCard 
@@ -90,7 +90,7 @@ function App() {
             />
           ))
         }
-      </div> 
+      </GameGrid>
       <p>Turns: {turns}</p> 
     </div>
   );
