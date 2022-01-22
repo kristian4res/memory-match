@@ -1,6 +1,5 @@
 # Memory Match
 Memory Match is a simple memory game made using React. <br/> 
-**This project is still a work in progress.**
 
 ### Built With
   - [React](https://reactjs.org/)
@@ -8,3 +7,4 @@ Memory Match is a simple memory game made using React. <br/>
 
 ## Acknowledgements
   - [Coding Ninja](https://github.com/iamshaunjp)
+  - [Card Images by Rawpixel](https://www.freepik.com/rawpixel-com)

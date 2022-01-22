@@ -1,27 +1,38 @@
 .game-card {
     position: relative;
     cursor: pointer;
- 
+    
+    height: 100%;
+    width: 100%;
+
     perspective: 150rem;
     -moz-perspective: 150rem;
 }
 
-.game-card img {
+.game-card .card-img {
     display: block;
+
+    height: 100%;
     width: 100%;
     
-    border: 2px solid rgb(156, 156, 156);
+    border: 4px solid rgb(156, 156, 156);
     border-radius: .6rem;
 
-    transition: all .8s ease;
+    transition: all .6s cubic-bezier(.05,.77,.63,1.18);
     backface-visibility: hidden;
 }
 
-.game-card img:hover {
-    border: 2px solid #fff;
+.game-card .game-card--back {
+    background-color: var(--color-tertiary-light);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2346496d' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.game-card img.game-card-matched {
+.game-card .card-img:hover {
+    border: 4px solid var(--color-secondary-dark);
+    box-shadow: 0 1.5rem 2rem rgb(0, 0, 0, 0.6);
+}
+
+.game-card .card-img.game-card-matched {
     border: 2px solid rgb(94, 228, 94);
 }
 
@@ -41,4 +52,17 @@
 
 .game-card-flip .game-card--back {
     transform: rotateY(-180deg);
+}
+
+@media only screen and (max-width: 37.5em) {
+    .game-card {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media only screen and (hover: none) {
+    .game-card .card-img {
+        box-shadow: 0 1.5rem 2rem rgb(0, 0, 0, 0.6);
+    }
 }

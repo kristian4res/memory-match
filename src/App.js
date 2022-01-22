@@ -6,12 +6,12 @@ import GameCard from './components/game-card/GameCard';
 import Button from './components/button/Button';
 
 const cardImages = [
-  { "src": "/img/helmet-1.png", matched: false },
-  { "src": "/img/potion-1.png", matched: false },
-  { "src": "/img/ring-1.png", matched: false },
-  { "src": "/img/scroll-1.png", matched: false },
-  { "src": "/img/shield-1.png", matched: false },
-  { "src": "/img/sword-1.png", matched: false },
+  { "src": "/img/rpx-astronaut.jpg", matched: false },
+  { "src": "/img/rpx-doctor.jpg", matched: false },
+  { "src": "/img/rpx-construction.jpg", matched: false },
+  { "src": "/img/rpx-officer.jpg", matched: false },
+  { "src": "/img/rpx-baseball.jpg", matched: false },
+  { "src": "/img/rpx-server.jpg", matched: false },
 ];
 
 function App() {
@@ -75,8 +75,11 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="">Memory Match</h1>
+      <h1 className="heading-primary">Memory Match</h1>
       <Button onClick={shuffleCards}>New Game</Button>
+      <div className="stats-container">
+        <span className="game-stats"> Turns: {turns}</span> 
+      </div>
       <GameGrid>
         {
           cards.map(card => (
@@ -91,7 +94,6 @@ function App() {
           ))
         }
       </GameGrid>
-      <p>Turns: {turns}</p> 
     </div>
   );
 }

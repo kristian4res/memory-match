@@ -16,12 +16,10 @@ const GameCard = ({ card, handleChoice, flipped, matched, disabled }) => {
                 <img 
                     src={card.src} 
                     alt="Card front" 
-                    className={`game-card--front ${matched ? "game-card-matched": ""}`}
+                    className={`card-img game-card--front ${matched ? "game-card-matched": ""}`}
                 />
-                <img 
-                    src="/img/cover.png" 
-                    alt="Card back" 
-                    className={`game-card--back ${matched ? "game-card-matched": ""}`}
+                <div 
+                    className={`card-img game-card--back ${matched ? "game-card-matched": ""}`}
                     onClick={handleClick}
                 />
             </div>

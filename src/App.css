@@ -3,3 +3,38 @@
   max-width: 860px;
   margin: 4rem auto;
 }
+
+.heading-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.game-stats {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .app {
+    margin: 2rem auto;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+  }
+
+  .game-stats {
+    display: inline-block;
+
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+}
