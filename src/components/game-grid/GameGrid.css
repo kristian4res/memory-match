@@ -14,5 +14,6 @@
     .game-grid {
         grid-template-rows: repeat(3, 12rem);
         margin: 2rem;
+        height: 100%;
     }
 }
