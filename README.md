@@ -7,7 +7,7 @@ Memory Match is a simple memory game made using React. <br/>
   - [Netlify](https://www.netlify.com/)
 
 ## Usage
-To visit the latest live version of the app, go to this [link](https://memory-match-fb0fe8.netlify.app/).
+To visit the latest live version of the app, go to this [link](https://memory-match-krt.netlify.app/).
 
 ## Acknowledgements
   - [Coding Ninja](https://github.com/iamshaunjp)
