@@ -94,6 +94,9 @@ function App() {
           ))
         }
       </GameGrid>
+      <div style="{{" display:="" 1,="" justify-content:="" center}}=""> 
+        Made by Kristian
+      </div>
     </div>
   );
 }
